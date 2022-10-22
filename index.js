@@ -26,7 +26,7 @@ const addManager = () => {
         {
             type: `input`,
             name: `name`,
-            message: `Please enter name of Team Manager:`
+            message: `Please enter name of Team Manager:`,
             validate: userInput => {
                 if (userInput){
                     return true;
@@ -39,7 +39,7 @@ const addManager = () => {
         {
             type: `input`,
             name: `id`,
-            message: `Please enter Team Manager's id #: :`
+            message: `Please enter Team Manager's id #: :`,
             validate: userInput => {
                 if (userInput){
                     return true;
