@@ -10,7 +10,7 @@ const Manager = require(`./lib/Manager`);
 const Engineer = require(`./lib/Engineer`);
 const Intern = require(`./lib/Intern`);
 
-//Build team array
+//Initiate array for employee data
 const employeeArray = [];
 
 //Begin prompting user
@@ -39,19 +39,53 @@ const addManager = () => {
         {
             type: `input`,
             name: `id`,
-            message: `Please enter Team Manager's id #: :`,
+            message: `Please enter Team Manager's id #:`,
             validate: userInput => {
                 if (userInput){
                     return true;
                 } else {
-                    console.log(`Please enter name of Team Manager\n `)
+                    console.log(`Please enter the id # of Team Manager\n `)
                     return false
+                }
+            }
+        },
+        {
+            type: `input`,
+            name: `email`,
+            message: `Please enter Team Manager's email address:`,
+            validate: email => {
+                valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+                if (valid) {
+                    return true;
+                } else {
+                    console.log(`Please enter a valid email!\n`)
+                    return false
+                }
+            }
+        },
+        {
+            type: `input`,
+            name: `officeNumber`,
+            message: `Please enter Team Manager's office number:`,
+            validate: userInput => {
+                if (isNaN(userInput)) {
+                    console.log(`Please enter the office number for the Team Manager\n`)
+                    return false;
+                } else {
+                    return true;
                 }
             }
         },
        
     ])
+//Add manager's information to data array
+.then(managerData => {
+    const {name, id, email, officeNumber} = managerData;
+    const manager = new Manager (name, id, email, officeNumber);
 
+    employeeArray.push(manager);
+    console.log(manager);
+})
 };
 
 //Add additional employees
