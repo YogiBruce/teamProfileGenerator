@@ -15,6 +15,42 @@ const employeeArray = [];
 
 //Begin prompting user
 const addManager = () => {
+    
+    console.log(`
+    ===================
+    Let's build a team!
+    ===================
+    `);
+
+    return inquirer.prompt([
+        {
+            type: `input`,
+            name: `name`,
+            message: `Please enter name of Team Manager:`
+            validate: userInput => {
+                if (userInput){
+                    return true;
+                } else {
+                    console.log(`Please enter name of Team Manager\n `)
+                    return false
+                }
+            }
+        },
+        {
+            type: `input`,
+            name: `id`,
+            message: `Please enter Team Manager's id #: :`
+            validate: userInput => {
+                if (userInput){
+                    return true;
+                } else {
+                    console.log(`Please enter name of Team Manager\n `)
+                    return false
+                }
+            }
+        },
+       
+    ])
 
 };
 
