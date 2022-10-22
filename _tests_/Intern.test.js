@@ -11,7 +11,7 @@ test(`creates an intern object`, () => {
 test(`gets employee school`, () => {
     const intern = new Intern(`Robert`, 85, 'da.bruce.jr@gmail.com', 'NAU');
 
-    expect(intern.school()).toEqual(expect.stringContaining(intern.school.toString()));
+    expect(intern.getSchool()).toEqual(expect.stringContaining(intern.school.toString()));
 });
 
 //Test getRole()

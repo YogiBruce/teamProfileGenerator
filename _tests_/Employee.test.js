@@ -5,7 +5,7 @@ test(`creates an employee object`, () => {
     const employee = new Employee(`Robert`, 85, `da.bruce.jr@gmail.com`);
 
     expect(employee.name).toEqual(expect.any(String));
-    expect(empoloyee.id).toEqual(expect.any(Number));
+    expect(employee.id).toEqual(expect.any(Number));
     expect(employee.email).toEqual(expect.any(String));
 });
 
