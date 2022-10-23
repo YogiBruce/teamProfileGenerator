@@ -20,7 +20,12 @@ body{
     font-size: 45px;
 }
 
+.card{
+    border-radius: 16px;
+
+}
 .card-header{
+    border-radius: 16px;
     background-color: var(--header);
     color: var(--secondary-header);
 }
