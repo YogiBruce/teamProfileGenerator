@@ -31,7 +31,7 @@ const addManager = () => {
                 if (userInput) {
                     return true;
                 } else {
-                    console.log(`Please enter name of Team Manager\n `)
+                    console.log(`\nPlease enter name of Team Manager\n `)
                     return false
                 }
             }
@@ -44,7 +44,7 @@ const addManager = () => {
                 if (userInput) {
                     return true;
                 } else {
-                    console.log(`Please enter the id # of Team Manager\n `)
+                    console.log(`\nPlease enter the id # of Team Manager\n `)
                     return false
                 }
             }
@@ -58,7 +58,7 @@ const addManager = () => {
                 if (valid) {
                     return true;
                 } else {
-                    console.log(`Please enter a valid email!\n`)
+                    console.log(`\nPlease enter a valid email!\n`)
                     return false
                 }
             }
@@ -69,7 +69,7 @@ const addManager = () => {
             message: `Please enter Team Manager's office number: `,
             validate: userInput => {
                 if (isNaN(userInput)) {
-                    console.log(`Please enter the office number for the Team Manager\n`)
+                    console.log(`\nPlease enter the office number for the Team Manager\n`)
                     return false;
                 } else {
                     return true;
@@ -112,7 +112,7 @@ const addEmployee = () => {
                 if (userInput) {
                     return true;
                 } else {
-                    console.log(`Please enter name of employee\n `);
+                    console.log(`\nPlease enter name of employee\n `);
                     return false;
                 }
             }
@@ -125,7 +125,7 @@ const addEmployee = () => {
                 if (userInput) {
                     return true;
                 } else {
-                    console.log(`Please enter the id # of employee\n `);
+                    console.log(`\nPlease enter the id # of employee\n `);
                     return false;
                 }
             }
@@ -139,7 +139,7 @@ const addEmployee = () => {
                 if (valid) {
                     return true;
                 } else {
-                    console.log(`Please enter a valid email!\n`);
+                    console.log(`\nPlease enter a valid email!\n`);
                     return false;
                 }
             }
@@ -153,7 +153,7 @@ const addEmployee = () => {
                 if (userInput) {
                     return true;
                 } else {
-                    console.log(`Please enter employee's github username\n`);
+                    console.log(`\nPlease enter employee's github username\n`);
                 }
             }
         },
@@ -166,7 +166,7 @@ const addEmployee = () => {
                 if (userInput) {
                     return true;
                 } else {
-                    console.log(`Please enter the intern's school\n`);
+                    console.log(`\nPlease enter the intern's school\n`);
                 }
             }
         },
@@ -188,12 +188,12 @@ const addEmployee = () => {
                 console.log(employee);
             }
             
-            teamArray.push(employee);
+            employeeArray.push(employee);
 
             if(confirmAddEmployee) {
                 return addEmployee(teamArray)
             } else {
-                return teamArray;
+                return employeeArray;
             }
         })
 };
