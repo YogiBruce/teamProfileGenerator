@@ -102,8 +102,47 @@ const addEmployee = () => {
             name: `role`,
             message: "Please select your employee's role:",
             choices: [`Engineer`, `Intern`]
-        }
-    ])
+        },
+        {
+            type: `input`,
+            name: `name`,
+            message: `Please enter name of employee:`,
+            validate: userInput => {
+                if (userInput) {
+                    return true;
+                } else {
+                    console.log(`Please enter name of employee\n `)
+                    return false
+                }
+            }
+        },
+        {
+            type: `input`,
+            name: `id`,
+            message: `Please enter employee's id #:`,
+            validate: userInput => {
+                if (userInput) {
+                    return true;
+                } else {
+                    console.log(`Please enter the id # of employee\n `)
+                    return false
+                }
+            }
+        },
+        {
+            type: `input`,
+            name: `email`,
+            message: `Please enter employee's email address:`,
+            validate: email => {
+                valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+                if (valid) {
+                    return true;
+                } else {
+                    console.log(`Please enter a valid email!\n`)
+                    return false
+                }
+            }
+        },
 };
 
 //Function using FS to create blank HTML
