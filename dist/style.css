@@ -2,10 +2,13 @@
     --header: #0e387a;
     --header-text: #9fafca;
     --secondary-header: #d0d8e5;
+    --gray: #f2f2f2;
+
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: var(--gray);
 }
 
 #navbar{

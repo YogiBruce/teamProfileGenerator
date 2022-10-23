@@ -218,7 +218,6 @@ const writeFile = data => {
             console.log(`Your team profile has been succesfully created! Please check out the index.html`)
         }
     })
-
 };
 
 //Create team array and pass data into generateHTML
