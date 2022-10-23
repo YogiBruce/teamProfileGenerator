@@ -2,10 +2,10 @@
 
 //Manager
 const generateManager = function (manager) {
-    return `<div class="col-4 mt-4">
+    return `<div class="col-sm-12 col-md-6 col-lg-4 mt-4">
     <div class="card h-100">
         <div class="card-header">
-            <h3>${manager.name}</h3>
+            <h3">${manager.name}</h3>
             <div class="row"><i class="fa-solid fa-mug-hot pr-2"></i>
                 <h4>Manager</h4>
             </div>
@@ -22,7 +22,7 @@ const generateManager = function (manager) {
 
 //Engineer
 const generateEngineer = function (engineer) {
-    return `<div class="col-4 mt-4">
+    return `<div class="col-sm-12 col-md-6 col-lg-4 mt-4">
     <div class="card h-100">
         <div class="card-header">
             <h3>${engineer.name}</h3>
@@ -42,7 +42,7 @@ const generateEngineer = function (engineer) {
 
 //Intern
 const generateIntern = function (intern) {
-    return `<div class="col-4 mt-4">
+    return `<div class="col-sm-12 col-md-6 col-lg-4 mt-4">
     <div class="card h-100">
         <div class="card-header">
             <h3>${intern.name}</h3>
@@ -105,8 +105,7 @@ const createTeamPage = function (employeeList) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Team Profile</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -117,7 +116,7 @@ const createTeamPage = function (employeeList) {
 <body>
     <header>
         <nav class="navbar" id="navbar">
-            <span class="navbar-brand mb-0 h1 w-100 text-center" id="navbar-text">My Team</span>
+            <span class="mb-0 h1 w-100 text-center" id="navbar-text">My Team</span>
         </nav>
     </header>
     <main>

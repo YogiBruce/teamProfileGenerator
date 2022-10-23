@@ -1,0 +1,23 @@
+:root{
+    --header: #0e387a;
+    --header-text: #9fafca;
+    --secondary-header: #d0d8e5;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar{
+    background-color: var(--header);
+    color: var(--header-text);
+}
+
+#navbar-text {
+    font-size: 45px;
+}
+
+.card-header{
+    background-color: var(--header);
+    color: var(--secondary-header);
+}
