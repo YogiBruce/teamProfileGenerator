@@ -198,7 +198,7 @@ const addEmployee = () => {
             employeeArray.push(employee);
 
             if(confirmAddEmployee) {
-                return addEmployee(teamArray)
+                return addEmployee(employeeArray)
             } else {
                 return employeeArray;
             }
