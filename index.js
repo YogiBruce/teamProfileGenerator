@@ -200,6 +200,14 @@ const addEmployee = () => {
 
 //Function using FS to create blank HTML
 const writeFile = data => {
+    fs.writeFile(`./dist/index.html`, data, err => {
+        if (err){
+            console.log(err)
+            return
+        } else {
+            console.log(`Your team profile has been succesfully created! Please check out the index.html`)
+        }
+    })
 
 };
 
