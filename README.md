@@ -25,6 +25,7 @@ User will need to have Node.js installed to run application. Clone YogiBruce's "
 You may clone this repo to begin using application: [GitHub repo](https://github.com/YogiBruce/teamProfileGenerator)
 
 <a id="Screenshot"></a>
+<img src="assets/teamProfileGenerator.gif" width="500px"/>
 
 #
 ## Usage
@@ -33,7 +34,8 @@ User will need to run "npm start" or "node index.js" from the command line to be
 
 ### Screencastify
 <a id="screencastify"></a>
-Follow this link to view walk-through video of application: 
+
+Follow this link to view walk-through video of application: [Google Drive](https://drive.google.com/file/d/1ixX1ak9MWN1BFcTSDHGnR9jtMAaDoZ7K/view?usp=sharing)
 
 #
 ## Tests
