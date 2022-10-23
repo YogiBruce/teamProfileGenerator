@@ -5,7 +5,7 @@ const generateManager = function (manager) {
     return `<div class="col-sm-12 col-md-6 col-lg-4 mt-4">
     <div class="card h-100">
         <div class="card-header">
-            <h3">${manager.name}</h3>
+            <h3>${manager.name}</h3>
             <div class="row"><i class="fa-solid fa-mug-hot pr-2"></i>
                 <h4>Manager</h4>
             </div>
