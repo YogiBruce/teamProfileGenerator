@@ -96,7 +96,7 @@ const addManager = () => {
 const addEmployee = () => {
     console.log(`
     =========================
-    Let's add your teammates!
+    Let's add a teammate!
     =========================
     `)
     
