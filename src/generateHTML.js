@@ -1,4 +1,5 @@
 //Divs for employee cards:
+
 //Manager
 const generateManager = function (manager) {
     return `<div class="col-4 mt-4">
@@ -38,6 +39,7 @@ const generateEngineer = function (engineer) {
     </div>
 </div> `;
 };
+
 //Intern
 const generateIntern = function (intern) {
     return `<div class="col-4 mt-4">
@@ -58,8 +60,38 @@ const generateIntern = function (intern) {
 
 
 
-//Push employee html cards into array.
+//Generate employee html cards and push into array.
 generateHTML = (data) => {
+
+    teamArray = [];
+
+    for (let i = 0; i < data.length; i++) {
+        const employee = data[i];
+        const role = employee.getRole();
+
+        if (role === `Manager`) {
+            const managerCard = generateManager(employee);
+
+            teamArray.push(managerCard);
+        }
+
+        if (role === `Engineer`) {
+            const engineerCard = generateEngineer(employee);
+
+            teamArray.push(engineerCard);
+        }
+
+        if (role === `Intern`) {
+            const internCard = generateIntern(employee);
+
+            teamArray.push(internCard);
+        }
+    }
+
+    const employeeList = teamArray.join('')
+
+    const createTeam = createTeamPage (employeeList);
+    return createTeam
 
 };
 
