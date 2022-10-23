@@ -90,7 +90,20 @@ const addManager = () => {
 
 //Add additional employees
 const addEmployee = () => {
-
+    console.log(`
+    =========================
+    Let's add your teammates!
+    =========================
+    `);
+    
+    return inquirer.prompt ([
+        {
+            type: `list`,
+            name: `role`,
+            message: "Please select your employee's role:",
+            choices: [`Engineer`, `Intern`]
+        }
+    ])
 };
 
 //Function using FS to create blank HTML

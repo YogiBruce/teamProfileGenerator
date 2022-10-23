@@ -1,7 +1,7 @@
 //Employee test using employee constructor
 const Employee = require(`../lib/Employee`)
 
-test(`creates an employee object`, () => {
+test(`Employee object is created`, () => {
     const employee = new Employee(`Robert`, 85, `da.bruce.jr@gmail.com`);
 
     expect(employee.name).toEqual(expect.any(String));
@@ -10,21 +10,21 @@ test(`creates an employee object`, () => {
 });
 
 //Tests name
-test(`gets employee name`, () => {
+test(`Employee has a name`, () => {
     const employee = new Employee(`Robert`, 85, `da.bruce.jr@gmail.com`);
 
     expect(employee.getName()).toEqual((expect.any(String)));
 });
 
 //Tests ID
-test(`gets employee ID`, () => {
+test(`Employee has id#`, () => {
     const employee = new Employee(`Robert`, 85, `da.bruce.jr@gmail.com`);
 
     expect(employee.getID()).toEqual(expect.any(Number));
 });
 
 //Tests Email
-test(`gets employee email`, () => {
+test(`Employee has email address`, () => {
     const employee = new Employee(`Robert`, 85, `da.bruce.jr@gmail.com`);
 
     expect(employee.getEmail()).toEqual(expect.stringContaining(employee.email.toString()));
